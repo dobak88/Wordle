@@ -160,7 +160,7 @@ public class Wordle{
 
 
 
-/*       Function to find the word to be solved. */
+/*       Function to find the word to be solved. NOT MY CODE, FOUND ONLINE*/
      public static String findWord(){
           try{
                BufferedReader reader = new BufferedReader(new FileReader("words.txt"));
