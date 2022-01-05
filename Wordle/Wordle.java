@@ -1,5 +1,5 @@
           /*
-          Dylan Rossi
+          Dylan R
           Wordle you can play all the time
           1.5.22
           */
