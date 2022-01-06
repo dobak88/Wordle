@@ -40,15 +40,15 @@ public class Wordle {
                }
                for (int i = 0; i < LENGTH; i++) {
                     if (userChar[i] == solve[i]) {
-                         System.out.print("1 ");
+                         System.out.print("1");
                          total++;
                     }
                     else if (userChar[i] == solve[0] || userChar[i] == solve[1] || userChar[i] ==
                               solve[2] ||userChar[i] == solve[3] || userChar[i] == solve[4]) {
-                         System.out.print("2 ");
+                         System.out.print("2");
                     }
                     else {
-                         System.out.print("0 ");
+                         System.out.print("0");
                     }
                }
                System.out.println();
