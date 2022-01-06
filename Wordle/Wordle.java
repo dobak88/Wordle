@@ -16,8 +16,12 @@ public class Wordle {
           int numOfTries = 0;
           char [] solve = new char[LENGTH];
           int total = 0;
+          //Clear terminal screen
+          System.out.print("\033[H\033[2J");
+          System.out.flush();
+
           String answer = findWord();
-               
+
           for (int i = 0; i < LENGTH; i++) {
                solve[i] = answer.charAt(i);
           }
@@ -25,9 +29,10 @@ public class Wordle {
           System.out.println("Enter a 5 letter word. If the letter is in the correct spot, print 1." +
           "\nIf the letter is in the word but not the right spot, print 2." +
           "\nIf the letter is not in the word, print 0." +
-          "\nYOU HAVE SIX(6) CHANCES!\n");
-               
+          "\n\nYOU HAVE SIX (6) CHANCES!\n");
+
           do {
+               System.out.print(numOfTries+1 + ".\t");
                total = 0;
                userInput = new String();
                userInput = input.next();
@@ -38,6 +43,7 @@ public class Wordle {
                for (int i = 0; i < LENGTH; i++) {
                   userChar[i] = userInput.charAt(i);
                }
+               System.out.print("  \t");
                for (int i = 0; i < LENGTH; i++) {
                     if (userChar[i] == solve[i]) {
                          System.out.print("1");
@@ -58,7 +64,7 @@ public class Wordle {
                     return;
                }
           } while (total != LENGTH && numOfTries < MAX_TRIES);
-               
+
           System.out.println();
           if (total != LENGTH) {
                System.out.println("\nYOU LOSE! The word was " + answer);
