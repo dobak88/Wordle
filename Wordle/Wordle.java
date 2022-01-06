@@ -17,18 +17,16 @@ public class Wordle {
           char [] solve = new char[LENGTH];
           int total = 0;
           String answer = findWord();
+               
           for (int i = 0; i < LENGTH; i++) {
                solve[i] = answer.charAt(i);
           }
-/* Print answer word to screen for error checking
-          for (int i = 0; i < 5; i++){
-               System.out.println(solve[i]);
-          }
-*/
+
           System.out.println("Enter a 5 letter word. If the letter is in the correct spot, print 1." +
           "\nIf the letter is in the word but not the right spot, print 2." +
           "\nIf the letter is not in the word, print 0." +
           "\nYOU HAVE SIX(6) CHANCES!\n");
+               
           do {
                total = 0;
                userInput = new String();
@@ -60,6 +58,7 @@ public class Wordle {
                     return;
                }
           } while (total != LENGTH && numOfTries < MAX_TRIES);
+               
           System.out.println();
           if (total != LENGTH) {
                System.out.println("\nYOU LOSE! The word was " + answer);
