@@ -1,6 +1,8 @@
           /*
           Dylan R.
           Wordle for Terminal
+          words.txt file from https://www-cs-faculty.stanford.edu/~knuth/sgb-words.txt
+          findWord() function from https://www-cs-faculty.stanford.edu/~knuth/sgb-words.txt
           */
 import java.util.*;
 import java.io.*;
@@ -24,6 +26,7 @@ public class Wordle {
           int total = 0;
           int wins = 0;
           int losses = 0;
+          //int points = 0;
 
           do{
                numOfTries = 0;
@@ -83,8 +86,7 @@ public class Wordle {
                userChoice = input.next().charAt(0);
           } while (userChoice != 'n');
      }
-/*       Function to find the word to be solved:
-https://stackoverflow.com/questions/12028205/randomly-choose-a-word-from-a-text-file         */
+//       Function to find the word to be solved:
      public static String findWord() {
           try {
                BufferedReader reader = new BufferedReader(new FileReader("words.txt"));
