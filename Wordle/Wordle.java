@@ -37,10 +37,10 @@ public class Wordle {
                     solve[i] = answer.charAt(i);
                }
 
-               System.out.println("\n\t\t\t\t*WORDLE*\n\nTry to guess the 5-letter word.\nEnter a 5-letter word.\n" +
+               System.out.println("\n\t\t\t\t*WORDLE*\n\n\t\t  *Try to guess the 5-letter word*\n\nEnter your own 5-letter word.\n" +
                     "If your letter is in the correct spot as the answer, you will see '1'.\nIf your letter is " +
                     "in the answer word but not in the right spot, you will see '2'.\nIf your letter is not in " +
-                    "the answer word, you will see '0'.\n\nYou have six chances to guess the correct word.\n");
+                    "the answer word, you will see '0'.\n\nYou have six chances to guess the correct word:\n");
 
                do {
                     System.out.print(numOfTries+1 + ".\t");
