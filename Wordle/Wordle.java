@@ -2,7 +2,7 @@
           Dylan R.
           Wordle for Terminal
           words.txt file from https://www-cs-faculty.stanford.edu/~knuth/sgb-words.txt
-          findWord() function from https://www-cs-faculty.stanford.edu/~knuth/sgb-words.txt
+          findWord() function from https://stackoverflow.com/questions/12028205/randomly-choose-a-word-from-a-text-file
           */
 import java.util.*;
 import java.io.*;
